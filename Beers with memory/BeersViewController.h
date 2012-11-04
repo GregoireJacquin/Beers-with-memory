@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DataModel;
 
-@interface ViewController : UIViewController
+@interface BeersViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, retain) DataModel *dataModel;
 
 @end
