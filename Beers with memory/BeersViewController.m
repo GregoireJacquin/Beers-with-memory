@@ -9,7 +9,7 @@
 #import "BeersViewController.h"
 #import "BeerDetailViewController.h"
 #import "Beer.h"
-#import "DataModel.h"
+#import "EditBeerViewController.h"
 
 @interface BeersViewController ()
 
@@ -17,7 +17,7 @@
 
 @implementation BeersViewController
 
-@synthesize dataModel;
+@synthesize dataModel,table;
 
 
 - (void)viewDidLoad
@@ -37,6 +37,7 @@
 - (void)dealloc
 {
     [dataModel release];
+    [table release];
     [super dealloc];
 }
 #pragma mark - UITableViewDelegate 
@@ -76,4 +77,26 @@
     [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
+- (IBAction)addBeer {
+    EditBeerViewController *controller = [[EditBeerViewController alloc] init];
+    controller.delegate = self;
+    [self presentViewController:controller animated:YES completion:nil];
+    [controller release];
+    
+}
+-(void)editBeerDidCancel:(EditBeerViewController *)controller
+{
+    
+    
+}
+-(void)editBeerDidSave:(EditBeerViewController *)controller
+{
+    Beer *beer = [[Beer alloc] init];
+    beer.name = controller.name;
+    beer.image = controller.image;
+    [self.dataModel addBeer:beer];
+    [beer release];
+    
+    [table reloadData];
+}
 @end

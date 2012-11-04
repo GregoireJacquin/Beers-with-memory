@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B863BBF31646BE7600963FE0 /* EditBeerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B863BBF11646BE7600963FE0 /* EditBeerViewController.m */; };
+		B863BBF41646BE7600963FE0 /* EditBeerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B863BBF21646BE7600963FE0 /* EditBeerViewController.xib */; };
 		B87EB9901645DAA10087C0EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87EB98F1645DAA10087C0EE /* UIKit.framework */; };
 		B87EB9921645DAA10087C0EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87EB9911645DAA10087C0EE /* Foundation.framework */; };
 		B87EB9941645DAA10087C0EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87EB9931645DAA10087C0EE /* CoreGraphics.framework */; };
@@ -51,6 +53,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B863BBF01646BE7600963FE0 /* EditBeerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBeerViewController.h; sourceTree = "<group>"; };
+		B863BBF11646BE7600963FE0 /* EditBeerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBeerViewController.m; sourceTree = "<group>"; };
+		B863BBF21646BE7600963FE0 /* EditBeerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditBeerViewController.xib; sourceTree = "<group>"; };
 		B87EB98B1645DAA10087C0EE /* Beers with memory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beers with memory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87EB98F1645DAA10087C0EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B87EB9911645DAA10087C0EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,8 +124,8 @@
 		B87EB9801645DAA10087C0EE = {
 			isa = PBXGroup;
 			children = (
-				B87EB9EE1645DEAB0087C0EE /* Model */,
 				B87EB9ED1645DEA60087C0EE /* Images */,
+				B87EB9EE1645DEAB0087C0EE /* Model */,
 				B87EB9951645DAA10087C0EE /* Beers with memory */,
 				B87EB98E1645DAA10087C0EE /* Frameworks */,
 				B87EB98C1645DAA10087C0EE /* Products */,
@@ -153,6 +158,9 @@
 				B87EB9A71645DAA10087C0EE /* BeersViewController.h */,
 				B87EB9A81645DAA10087C0EE /* BeersViewController.m */,
 				B87EB9AA1645DAA10087C0EE /* BeersViewController.xib */,
+				B863BBF01646BE7600963FE0 /* EditBeerViewController.h */,
+				B863BBF11646BE7600963FE0 /* EditBeerViewController.m */,
+				B863BBF21646BE7600963FE0 /* EditBeerViewController.xib */,
 				B8E72F2D164662A9003A71DB /* BeerDetailViewController.h */,
 				B8E72F2E164662A9003A71DB /* BeerDetailViewController.m */,
 				B8E72F2F164662A9003A71DB /* BeerDetailViewController.xib */,
@@ -302,6 +310,7 @@
 				B87EB9EB1645DEA10087C0EE /* beer_westvleteren_abt_12.jpg in Resources */,
 				B87EB9EC1645DEA10087C0EE /* beer_whiteback_white.jpg in Resources */,
 				B8E72F31164662A9003A71DB /* BeerDetailViewController.xib in Resources */,
+				B863BBF41646BE7600963FE0 /* EditBeerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +327,7 @@
 				B87EB9B81645DB920087C0EE /* Beer.m in Sources */,
 				B8E72F30164662A9003A71DB /* BeerDetailViewController.m in Sources */,
 				B8E72F7216467F8A003A71DB /* DataModel.m in Sources */,
+				B863BBF31646BE7600963FE0 /* EditBeerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

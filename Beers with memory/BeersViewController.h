@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class DataModel;
+#import "DataModel.h"
+#import "EditBeerViewController.h"
 
-@interface BeersViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface BeersViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,EditBeerDelegate>
 
 @property (nonatomic, retain) DataModel *dataModel;
-
+@property (nonatomic, retain) IBOutlet UITableView *table;
+- (IBAction)addBeer;
 @end

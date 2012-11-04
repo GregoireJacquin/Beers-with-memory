@@ -78,44 +78,9 @@ static NSString* const FAVORITES_KEY = @"Favorites";
     [beer release];
     
 }
-- (Beer *)findBeerNamed:(NSString*)name
+- (void)addBeer:(Beer *)beer
 {
-	for (Beer *beer in self.beers)
-	{
-		if ([beer.name isEqualToString:name])
-			return beer;
-	}
-	return nil;
-}
-
-- (int)favoritesCount
-{
-	return self.favorites.count;
-}
-
-- (Beer *)favoriteAtIndex:(int)index
-{
-	NSString *name = [self.favorites objectAtIndex:index];
-	return [self findBeerNamed:name];
-}
-
-- (BOOL)isFavorite:(Beer *)beer
-{
-	return [self.favorites containsObject:beer.name];
-}
-
-- (void)addToFavorites:(Beer *)beer
-{
-	[self.favorites addObject:beer.name];
-	[[NSUserDefaults standardUserDefaults] setObject:self.favorites forKey:FAVORITES_KEY];
-	[[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-- (void)removeFromFavorites:(Beer *)recipe
-{
-	[self.favorites removeObject:recipe.name];
-	[[NSUserDefaults standardUserDefaults] setObject:self.favorites forKey:FAVORITES_KEY];
-	[[NSUserDefaults standardUserDefaults] synchronize];
+    [self.beers addObject:beer];
 }
 
 @end

@@ -12,5 +12,6 @@
 - (int)beersCount;
 - (Beer *)beerAtIndex:(int)index;
 - (void)removeBeerAtIndex:(int)index;
+- (void) addBeer:(Beer *)beer;
 @end
 

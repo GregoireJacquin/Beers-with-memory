@@ -26,8 +26,8 @@
     // Override point for customization after application launch.
     self.viewController = [[[BeersViewController alloc] initWithNibName:@"BeersViewController" bundle:nil] autorelease];
     self.navigationController = [[[UINavigationController alloc] initWithRootViewController:self.viewController] autorelease];
-                             
-    //[self.window addSubview:self.navigationController.view];
+    
+    //self.window.rootViewController = self.viewController;
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
