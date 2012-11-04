@@ -23,6 +23,9 @@
 - (void)viewDidLoad
 {
     self.title = @"Beers";
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBeer)];
+    self.navigationItem.rightBarButtonItem = anotherButton;
+    [anotherButton release];
     dataModel = [[DataModel alloc] init];
     
     [super viewDidLoad];
